@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange Rate App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crypto Exchange Rate App</h1>
+    <form id="exchangeRateForm" action="/get-exchange-rate" method="POST">
+        <label for="cryptoCurrency">Cryptocurrency (e.g., BTC):</label>
+        <input type="text" id="cryptoCurrency" name="cryptoCurrency" required><br><br>
+
+        <label for="traditionalCurrency">Traditional Currency (e.g., USD):</label>
+        <input type="text" id="traditionalCurrency" name="traditionalCurrency" required><br><br>
+
+        <button type="submit">Get Exchange Rate</button>
+    </form>
+
+    <h2 id="exchangeRateResult"></h2>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
